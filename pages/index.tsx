@@ -1,18 +1,7 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 
 import Connector from "react-svg-connector";
 
-// if you want to use core connector components
-import {
-  SConnector,
-  LineConnector,
-  NarrowSConnector,
-} from "react-svg-connector";
-import { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
-import Draggable from "react-draggable";
-import React from "react";
 import {
   Accordion,
   AccordionButton,
@@ -20,9 +9,6 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Button,
-  Container,
-  Flex,
   Slider,
   SliderFilledTrack,
   SliderThumb,
@@ -30,6 +16,8 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import React, { useEffect, useRef, useState } from "react";
+import Draggable from "react-draggable";
 
 const Home: NextPage = () => {
   const [sliderValue, setSliderValue] = useState(500);
